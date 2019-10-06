@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    margin: 50px;
+    width: 300px;
+}
+
+.card:hover {
+    box-shadow: 0px 8px 8px gray;
+}
+
+.card .image {
+    width: 100%;
+    position: relative;
+    height: 200px;
+}
+
+.card .image img {
+    width: 100%;
+    height: 200px;
+}
+
+.card .image .date_time {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    width: 60px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.card .image .date_time .date {
+    padding: 3px 0;
+    background: #1894A0;
+}
+
+.card .image .date_time .date p:first-child {
+    font-size: 20px;
+}
+
+.card .image .date_time .time {
+    background: #334564;
+}
+
+.card .title {
+    height: 150px;
+    border: 1px solid #ddd;
+}
+
+.card .title p {
+    color: rgb(19, 49, 127);
+    line-height: 1.25;
+    font-family: pf_din_text_cond_promedium, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.card .statistic {
+    border: 1px solid #ddd;
+}
+
+.card .statistic ul {
+    background: #f2f2f2;
+}
+
+.card .statistic ul li {
+    display: inline-block;
+    width: 32.33%;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 22px;
+    color: gray;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.card .statistic ul li:last-child {
+    border-right: none;
+}
+
+.card .statistic .dislike:hover {
+    background: red;
+    color: white
+}
+
+.card .statistic ul li:first-child:hover {
+    background: green;
+    color: white
+}
